@@ -33,7 +33,7 @@ export default function MaidRegister() {
     try {
 
       await axios.post(
-        "https://brilliant-reverence-production-34e4.up.railway.app/api",
+        "https://brilliant-reverence-production-34e4.up.railway.app/api/auth/register",
         formData
       );
 
