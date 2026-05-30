@@ -33,7 +33,7 @@ export default function ClientRegister() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://brilliant-reverence-production-34e4.up.railway.app/api",
         formData
       );
 
