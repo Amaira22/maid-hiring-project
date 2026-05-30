@@ -1,0 +1,488 @@
+/* ===================================
+GLOBAL STYLES
+=================================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container,
+.container-fluid {
+  overflow-x: hidden;
+}
+
+/* ===================================
+NAVBAR
+=================================== */
+
+.navbar {
+  z-index: 999;
+}
+
+.custom-link {
+  color: #222 !important;
+  transition: 0.3s;
+}
+
+.custom-link:hover {
+  color: #198754 !important;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+
+  .navbar-brand img {
+    width: 90px;
+  }
+
+  .navbar .btn {
+    width: 100%;
+  }
+
+}
+
+/* ===================================
+HOME PAGE
+=================================== */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #198754 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #198754 !important;
+}
+
+.home-slider img {
+  width: 100%;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+
+/* ===================================
+CARDS
+=================================== */
+
+.card {
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===================================
+LOGIN PAGE
+=================================== */
+
+.login-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+}
+
+.login-logo {
+  width: 180px;
+}
+
+.login-input {
+  background-color: #eef2ff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.login-input:focus {
+  box-shadow: none;
+  border: 1px solid #28a745;
+}
+
+.login-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.login-btn:hover {
+  background-color: #23913d;
+  color: white;
+}
+
+.register-link {
+  color: #28a745;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ===================================
+REGISTER PAGE
+=================================== */
+
+.register-page {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.register-header {
+  background-color: #169647;
+  padding: 22px;
+  text-align: center;
+}
+
+.register-header h1 {
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.register-form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.register-input {
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.register-input:focus {
+  box-shadow: none;
+  border: 1px solid #169647;
+}
+
+.register-btn {
+  background-color: #169647;
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+}
+
+.register-btn:hover {
+  background-color: #12783a;
+  color: white;
+}
+
+/* ===================================
+MAID REGISTER PAGE
+=================================== */
+
+.maid-register-page {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.register-banner {
+  background: #149647;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.register-banner h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.register-card {
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-logo {
+  width: 180px;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.custom-input {
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+textarea.custom-input {
+  height: auto;
+  padding-top: 15px;
+}
+
+.register-btn {
+  background: #149647;
+  color: white;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+
+.register-btn:hover {
+  background: #0f7a39;
+  color: white;
+}
+
+/* ===================================
+SERVICE PAGE
+=================================== */
+
+.service-page {
+  background-color: #f8f9fa;
+}
+
+.service-heading {
+  background: #198754;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.service-heading h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.service-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.book-btn {
+  background: #198754;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.book-btn:hover {
+  background: #146c43;
+}
+
+/* ===================================
+FOOTER
+=================================== */
+
+.footer-bg {
+  background-color: #198754;
+  color: white;
+}
+
+.footer-bg ul {
+  padding-left: 0;
+}
+
+.footer-bg ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-bg a:hover {
+  color: #d1ffd1 !important;
+}
+
+.f_logo {
+  color: #ffc107;
+}
+
+.f-top {
+  background-color: #146c43;
+}
+
+.f-bottom {
+  background-color: #111;
+}
+
+/* ===================================
+ABOUT PAGE
+=================================== */
+
+.vision {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ===================================
+FORMS
+=================================== */
+
+.form-control,
+.form-select {
+  min-height: 48px;
+  border-radius: 10px;
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #198754;
+}
+
+/* ===================================
+BUTTONS
+=================================== */
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.btn-success {
+  background-color: #198754;
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+}
+
+/* ===================================
+RESPONSIVE DESIGN
+=================================== */
+
+@media (max-width: 992px) {
+
+  .service-heading h1 {
+    font-size: 40px;
+  }
+
+  .register-card,
+  .register-form,
+  .login-card {
+    padding: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .service-heading {
+    padding: 60px 15px;
+  }
+
+  .service-heading h1 {
+    font-size: 32px;
+  }
+
+  .register-banner h1 {
+    font-size: 32px;
+  }
+
+  .register-card,
+  .register-form,
+  .login-card {
+    padding: 25px;
+  }
+
+  .card {
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .service-heading h1 {
+    font-size: 28px;
+  }
+
+  .register-card,
+  .register-form,
+  .login-card {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+}
